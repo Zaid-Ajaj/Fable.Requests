@@ -2,7 +2,7 @@
 
 Fable library for making HTTP requests targeting Python and using the [requests](https://pypi.org/project/requests/) library under the hood.
 
-> This is the initial release still of the library and is considers a placeholder for the full coverage of the API. 
+> This is the initial release still of the library and is considers a placeholder for the implementation of the API. The current state of the library is _not_ usable and only had the `Requests.get` function! 
 
 ```fs
 open Fable.Requests
