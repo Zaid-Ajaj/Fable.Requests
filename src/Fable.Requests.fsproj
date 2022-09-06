@@ -5,7 +5,7 @@
     <Authors>Zaid Ajaj</Authors>
     <PackageTags>fsharp;fable;python;requests</PackageTags>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
-    <Version>0.0.2</Version>
+    <Version>0.0.3</Version>
     <PackageReleaseNotes>Initial release with source files and Femto support</PackageReleaseNotes>
     <PackageProjectUrl>https://github.com/Zaid-Ajaj/Fable.Requests</PackageProjectUrl>
     <RepositoryUrl>https://github.com/Zaid-Ajaj/Fable.Requests.git</RepositoryUrl>
@@ -25,6 +25,7 @@
 
   <ItemGroup>
     <PackageReference Include="Fable.Python" Version="0.22.0" />
+    <PackageReference Update="FSharp.Core" Version="4.7.2" />
   </ItemGroup>
 
 </Project>
