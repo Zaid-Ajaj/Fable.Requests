@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "fable-requests"
+version = "0.1.0"
+description = "Fable library for making HTTP requests targeting Python"
+authors = ["Zaid Ajaj <zaid.naom@gmail.com>"]
+readme = "README.md"
+packages = [{include = "fable_requests"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+requests = "2.28.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

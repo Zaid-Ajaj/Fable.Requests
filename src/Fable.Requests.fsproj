@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Authors>Zaid Ajaj</Authors>
+    <PackageTags>fsharp;fable;python;requests</PackageTags>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <Version>0.0.1</Version>
+    <PackageReleaseNotes>Initial release with Femto support</PackageReleaseNotes>
+    <PackageProjectUrl>https://github.com/Zaid-Ajaj/Fable.Requests</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/Zaid-Ajaj/Fable.Requests.git</RepositoryUrl>
+    <PackageLicense>https://github.com/Zaid-Ajaj/Fable.Requests/blob/master/LICENSE</PackageLicense>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <PythonDependencies>
+      <Package Name="requests" Version="&gt;= 2.28.1 &lt; 3.0.0" ResolutionStrategy="Max" />
+    </PythonDependencies>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="Library.fs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Fable.Python" Version="0.22.0" />
+  </ItemGroup>
+
+</Project>
