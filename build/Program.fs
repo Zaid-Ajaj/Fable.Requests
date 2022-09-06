@@ -13,6 +13,8 @@ let src = path [ solutionRoot; "src" ]
 let tests = path [ solutionRoot; "tests" ]
 
 let clean() =
+    if Shell.Exec("dotnet", "fable clean --lang python --yes", tests) <> 0 then
+        failwith "Could not run dotnet fable clean on the tests directory"
     Shell.deleteDir (path [ src; "bin" ])
     Shell.deleteDir (path [ src; "obj" ])
 
@@ -65,11 +67,10 @@ let run() =
 let main (args: string[]) =
     try
         match args with
-        | [| |]
         | [| "build"   |] -> build()
         | [| "pack"    |] -> pack()
         | [| "publish" |] -> publish()
-        | [| "run" |] -> run()
+        | [| |] -> clean(); run()
         | _ -> printfn "Unknown args %A" args
         0
     with ex ->
