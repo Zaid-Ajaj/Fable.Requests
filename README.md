@@ -1,4 +1,4 @@
-# Fable.Reqeusts [![Nuget](https://img.shields.io/nuget/v/Fable.Reqeusts.svg?colorB=green)](https://www.nuget.org/packages/Fable.Reqeusts)
+# Fable.Requests [![Nuget](https://img.shields.io/nuget/v/Fable.Requests.svg?colorB=green)](https://www.nuget.org/packages/Fable.Requests)
 
 Fable library for making HTTP requests targeting Python and using the [requests](https://pypi.org/project/requests/) library under the hood.
 
