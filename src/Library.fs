@@ -97,7 +97,7 @@ type Requests() =
         Requests.mapResponseType response
 
     /// <summary>
-    /// Sends a HEAD request to the specified URL and returns a response.
+    /// Sends an OPTIONS request to the specified URL and returns a response.
     /// </summary>
     static member options(url: string, ?data: string, ?headers:Map<string, string>) : Response =
         let headersDict = Requests.createHeadersDict headers
