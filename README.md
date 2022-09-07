@@ -2,7 +2,7 @@
 
 Fable library for making HTTP requests targeting Python and using the [requests](https://pypi.org/project/requests/) library under the hood.
 
-> This is the initial release still of the library and is considers a placeholder for the full implementation of the API. The current state of the library is barely usable and contributions are more than welcome!
+> This is the initial release still of the library and the API is subject to change. Use at your own risk. Contributions are welcome!
 
 ```fs
 open Fable.Requests
@@ -14,14 +14,12 @@ printfn $"Response: {response.text}"
 ```
 
 There are these functions:
- - `Request.get(url: string)`
  - `Request.get(url: string, ?headers:Map<string, string>)` 
- - `Request.post(url: string, data: string)`
- - `Request.post(url: string, data: string, ?headers:Map<string, string>)` 
- - `Request.put(url: string, data: string)`
- - `Request.put(url: string, data: string, ?headers:Map<string, string>)` 
- - `Request.delete(url: string, data: string)`
- - `Request.delete(url: string, data: string, ?headers:Map<string, string>)` 
+ - `Request.post(url: string, ?data: string, ?headers:Map<string, string>)` 
+ - `Request.put(url: string, ?data: string, ?headers:Map<string, string>)` 
+ - `Request.delete(url: string, ?data: string, ?headers:Map<string, string>)` 
+ - `Request.head(url: string, ?data: string, ?headers:Map<string, string>)` 
+ - `Request.options(url: string, ?data: string, ?headers:Map<string, string>)` 
 
 ## Installation
 

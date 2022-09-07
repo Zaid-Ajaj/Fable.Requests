@@ -5,8 +5,8 @@
     <Authors>Zaid Ajaj</Authors>
     <PackageTags>fsharp;fable;python;requests</PackageTags>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
-    <Version>0.1.0</Version>
-    <PackageReleaseNotes>Implement basic HTTP verbs accepting URL, data and optional headers</PackageReleaseNotes>
+    <Version>0.2.0</Version>
+    <PackageReleaseNotes>Allow data payload to be optional on all HTTP verbs, add Requests.head and Requests.options</PackageReleaseNotes>
     <PackageProjectUrl>https://github.com/Zaid-Ajaj/Fable.Requests</PackageProjectUrl>
     <RepositoryUrl>https://github.com/Zaid-Ajaj/Fable.Requests.git</RepositoryUrl>
     <PackageLicense>https://github.com/Zaid-Ajaj/Fable.Requests/blob/master/LICENSE</PackageLicense>
